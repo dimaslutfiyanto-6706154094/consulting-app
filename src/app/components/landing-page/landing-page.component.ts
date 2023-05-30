@@ -1,4 +1,5 @@
 import { Component, QueryList, ViewChildren } from '@angular/core';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs';
 import { NgbdSortableHeader, SortEvent } from 'src/app/directives/sortable.directive';
 import { CountryService } from 'src/app/services/country.service';
@@ -18,9 +19,16 @@ interface Country {
 })
 
 export class LandingPageComponent {
-	images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+	// images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+	images1 = "../../../assets/4 terlalu.png";
+	images2 = "../../../assets/Manfaat KB.jpg";
 
-	constructor(public service: CountryService) {
+	constructor(public service: CountryService, config: NgbCarouselConfig) {
+		config.interval = 15000;
+		config.wrap = false;
+		config.keyboard = false;
+		config.pauseOnHover = false;
+
 		this.countries$ = service.countries$;
 		this.total$ = service.total$;
 	}
