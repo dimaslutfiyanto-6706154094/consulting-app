@@ -1,0 +1,27 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.carousel-style {
+    margin: auto
+}
+
+.picsum-img-wrapper {
+    img {
+        width: 100%;
+    }
+}
+
+.table-list {
+    margin: 15px 10px 5px 10px;
+}

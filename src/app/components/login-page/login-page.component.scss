@@ -1,0 +1,27 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 10px 250px;
+
+    .login-form {
+        margin: 10px 10px 10px 10px;
+    }
+
+    .form-check {
+        margin: 0px 0px 10px 5px;
+    }
+
+    .form-label {
+        margin-left: 5px;
+    }
+
+    .signup-link {
+        margin-left: 5px;
+    }
+}

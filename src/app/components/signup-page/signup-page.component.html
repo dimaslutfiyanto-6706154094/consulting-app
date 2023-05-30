@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="card col-6 mb-6">
+    <form [formGroup]="signUpForm" class="login-form" (ngSubmit)="signUp()">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="username" class="form-control" id="inputUsername" placeholder="Username" formControlName="username">
+      </div>
+      <div class="form-group">
+        <label for="inputEmail">Email address</label>
+        <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+          placeholder="Enter email" formControlName="email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" formControlName="password">
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+      </div>
+      <div class="form-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
